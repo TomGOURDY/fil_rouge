@@ -9,10 +9,6 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-	<title>Le tchat en AJAX !</title>
-    </head>
-	
     <body>
         <div id="messages">
             <!-- les messages du tchat -->
@@ -40,10 +36,9 @@
                 $requete->closeCursor();
 
             ?>
-
         </div>
 
-	<form method="POST" action="traitement.php">
+	<form method="POST" action="ChatController.php">
 	    Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
 	    Message : <textarea name="message" id="message"></textarea><br />
 	    <input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
@@ -53,7 +48,4 @@
 
       <script src="chat.js"></script>
     </body>
-</html>
-
-
 </html>
